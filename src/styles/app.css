@@ -1,0 +1,58 @@
+:root {
+    --nice-grey: rgb(92, 94, 104);
+    --nice-red: rgb(201, 135, 135);
+    --dark-red: rgb(210, 70, 70);
+    --dark-green: rgb(17, 147, 45);
+    --nice-green: rgb(144, 227, 126);
+}
+
+body {
+    background-color: rgb(53, 49, 49);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-size: large;
+    border: solid;
+    border-color: var(--nice-grey);
+    color: var(--nice-grey);
+    border-width: 0.2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition: all, 0.3s;
+    
+}
+
+button:hover {
+    color: white;
+    background-color: var(--nice-grey);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.channel-list {
+    border: solid;
+    border-color: var(--nice-grey);
+    width: 20em;
+    height: 15.25em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-width: 0.2em;
+    position: relative;
+}
+
+.msg-list {
+    border: solid;
+    border-color: var(--nice-grey);
+    width: 50em;
+    height: 25em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-width: 0.2em;
+    position: relative;
+}

@@ -1,0 +1,81 @@
+
+.channel-list >div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+ div>.channel {
+    border: solid;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: center;
+    transition: background-color,0.15s;
+    width: 100%;
+    border-radius: 0;
+}
+div >.count {
+    position: absolute;
+    margin: 0;
+    padding: 0.5em 0.8em;
+    top: 0.3em;
+    right: 0.5em;
+    text-align: center;
+    border: solid;
+
+    border-radius: 1em;
+}
+div > .red.channel {
+
+    border-color: var(--dark-red);
+    background-color: var(--nice-red);
+    color: var(--dark-red);
+}
+
+div > .red.count{
+
+    border: none;
+    background-color: var(--dark-red);
+    color: var(--nice-red);
+}
+
+div > .green.count{
+    border: none;
+    background-color: var(--dark-green);
+    color: var(--nice-green);
+}
+
+div:hover >.red.channel {
+    background-color: var(--dark-red);
+    color: var(--nice-red);
+}
+
+div:hover >.red.count {
+    background-color: var(--nice-red);
+    color: var(--dark-red);
+}
+
+div:hover >.green.count {
+    background-color: var(--nice-green);
+    color: var(--dark-green);
+}
+
+div > .green.channel {
+
+    border-color: var(--dark-green);
+    background-color: var(--nice-green);
+    color: var(--dark-green);
+}
+
+ div:hover > .green.channel {
+    background-color: var(--dark-green);
+    color: var(--nice-green);
+}
+.channelCreate {
+font-size: 1em;
+    border: solid;
+    border-width: 0.25em;
+    border-radius: 0.3em;
+}
